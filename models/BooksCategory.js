@@ -19,8 +19,8 @@ const BooksCategorySchema = new mongoose.Schema({
   },
   subcategories: [SubcategorySchema]
 }, {
-  collection: 'BooksCategory' // 👈 Ensure it uses the correct MongoDB collection
+  collection: 'bookscategories' // 👈 Ensure it uses the correct MongoDB collection
 });
 
 // Export the model
-module.exports = mongoose.model('BooksCategory', BooksCategorySchema);
+module.exports = mongoose.model('bookscategories', BooksCategorySchema);
