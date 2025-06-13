@@ -16,3 +16,7 @@ app.use('/api', require('./routes/person.routes'));  // all person routes with c
 app.listen(PORT, () => {
   console.log('🚀 Server running on http://localhost:3000');
 });
+
+//comment for checking
+
+

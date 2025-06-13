@@ -6,7 +6,7 @@ const BooksCategory = require('../models/BooksCategory');
 router.get('/books', async (req, res) => {
   try {
     const categories = await BooksCategory.find();
-    res.status(200).json(categories);
+    res.status(200).json({categories});
   } catch (err) {
     res.status(500).json({ success: false, message: 'Error fetching data', error: err.message });
   }
