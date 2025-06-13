@@ -10,6 +10,7 @@
   "author": "by kundan gupta",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongoose": "^7.6.1",
     "mongoose-sequence": "^6.0.1",
