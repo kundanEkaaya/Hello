@@ -3,10 +3,11 @@ require('dotenv').config();
 
 //const mongooseURL = 'mongodb://localhost:27017/OldBooksAdda';
 
-const mongooseURL= 'mongodb+srv://Welcome:Welcome123@cluster0.fytwerp.mongodb.net/';
+//const mongoUrl= process.env.LOCAL_URL
+
 const mongoUrl= process.env.DB_URL;
 
-mongoose.connect(mongooseURL);
+mongoose.connect(mongoUrl);
 
 const db = mongoose.connection;
 //add comment for checking
