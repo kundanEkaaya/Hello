@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const mongooseURL = 'mongodb://localhost:27017/OldBooksAdda';
+//const mongooseURL = 'mongodb://localhost:27017/OldBooksAdda';
+
+const mongooseURL= 'mongodb+srv://Welcome:Welcome123@cluster0.fytwerp.mongodb.net/';
+const mongoUrl= process.env.DB_URL;
 
 mongoose.connect(mongooseURL);
 
