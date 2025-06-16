@@ -14,7 +14,7 @@ app.use('/api', require('./routes/books.routes'));   // /api/books
 app.use('/api', require('./routes/person.routes'));  // all person routes with custom paths
 
 app.listen(PORT, () => {
-  console.log('🚀 Server running on http://localhost:3000');
+  console.log('🚀 Server running on http://localhost: ${PORT}');
 });
 
 //comment for checking
